@@ -1,0 +1,35 @@
+//FONT
+$inter: 'Inter';
+
+// COLORS
+
+:root {
+    --bg: #1e202a;
+    --top-bg: #1f212e;
+    --card-bg: #252a41;
+    --toogle: linear-gradient(90deg, rgba(55, 143, 230, 1) 0%, rgba(62, 218, 130, 1) 50%);
+    --blue-text: #8b97c6;
+    --numbers: #FFF;
+    --title: #FFF;
+    --subtitle: #FFF;
+}
+
+[data-theme="light"] {
+    --bg: #ffffff;
+    --top-bg: #f5f7ff;
+    --card-bg: #f0f2fa;
+    --toogle: #63687e;
+    --blue-text: #63687e;
+    --numbers: #1e202a;
+    --title: #1e202a;
+    --subtitle: #63687e;
+}
+
+
+$red: #dc414c;
+$blue-text: #8b97c6;
+$white-text: #fff;
+$facebook: #00bfff;
+$twitter: #1ca0f2;
+$instagram: linear-gradient(to right, #F2C382, #CC5591);
+$youtube: #c4032a;
