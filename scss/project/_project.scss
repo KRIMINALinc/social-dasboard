@@ -27,57 +27,76 @@
         color: var(--blue-text);
         font-weight: 700;
     }
+    .main-title{
+        hr{
+border-top: none;
+            @include media-breakpoint-down(xs){
+                border-top: 2px solid var(--blue-text);
+             }
 
-    .toogle-text {
-        color: var(--blue-text);
-        margin-right: 10px;
-        font-weight: 700;
-    }
-
-    .theme-switch {
-        display: inline-block;
-        height: 23px;
-        position: relative;
-        width: 48px;
-
-        input {
-            display: none;
-
-            &:checked+.slider {
-                background-color: $blue-text;
-
-                &:before {
-                    transform: translateX(26px);
-                }
-            }
         }
 
-        .slider {
-            background: var(--toogle);
-            bottom: 0;
-            cursor: pointer;
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transition: .4s;
 
-            &::before {
-                background-color: var(--card-bg);
-                bottom: 4px;
-                content: "";
-                height: 15px;
-                left: 4px;
-                position: absolute;
-                transition: .4s;
-                width: 15px;
+
+    }
+
+    .change {
+        justify-content: flex-end;
+        @include media-breakpoint-down(xs){
+            justify-content: space-between;
+        }
+
+        .toogle-text {
+            color: var(--blue-text);
+            margin-right: 10px;
+            font-weight: 700;
+        }
+
+        .theme-switch {
+            display: inline-block;
+            height: 23px;
+            position: relative;
+            width: 48px;
+
+            input {
+                display: none;
+
+                &:checked+.slider {
+                    background-color: $blue-text;
+
+                    &:before {
+                        transform: translateX(26px);
+                    }
+                }
             }
 
-            &.round {
-                border-radius: 34px;
+            .slider {
+                background: var(--toogle);
+                bottom: 0;
+                cursor: pointer;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: .4s;
 
-                &:before {
-                    border-radius: 50%;
+                &::before {
+                    background-color: var(--card-bg);
+                    bottom: 4px;
+                    content: "";
+                    height: 15px;
+                    left: 4px;
+                    position: absolute;
+                    transition: .4s;
+                    width: 15px;
+                }
+
+                &.round {
+                    border-radius: 34px;
+
+                    &:before {
+                        border-radius: 50%;
+                    }
                 }
             }
         }
